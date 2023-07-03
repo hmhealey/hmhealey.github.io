@@ -2,9 +2,6 @@ name: publish
 on: workflow_dispatch
 jobs:
   build-and-publish:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
 
     steps:
