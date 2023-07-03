@@ -1,0 +1,16 @@
+name: publish
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Build" the site
+        run: |
+          cp -R src dist
+
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: $GITHUB_WORKSPACE/dist
+
+      - uses: actions/deploy-pages@main
