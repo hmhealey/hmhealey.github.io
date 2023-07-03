@@ -13,3 +13,4 @@ insert_final_newline = true
 
 [*.yml]
 indent_size = 2
+quote_type = single
