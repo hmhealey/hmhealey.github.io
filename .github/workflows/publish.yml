@@ -16,6 +16,6 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: $GITHUB_WORKSPACE/dist
+          path: ./dist
 
       - uses: actions/deploy-pages@main
